@@ -3,3 +3,4 @@ El proyecto es de naturaleza Mecatrónica, debido a su enfoque en el diseño, co
 <p align="center">
   <img width="460" height="300" src="https://www.researchgate.net/profile/Arun-Samantaray/publication/263277248/figure/fig1/AS:614048953540620@1523412087965/Schematic-representation-of-quadruped-robot-with-compliant-legs.png">
 </p>
+En este repositorio se da el archivo a una interfaz gráfica para la planeación de posiciones y manejo del robot, en la cual se tiene en cuenta sus límites articulares y dimensiones generales.
