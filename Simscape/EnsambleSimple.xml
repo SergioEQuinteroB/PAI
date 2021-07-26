@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="Sergio Quintero" on="07/25/21||17:40:09" using="Simscape Multibody Link Version 7.0" from="Autodesk Inventor 2020.2 (Build 242310000, 310)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="EnsambleSimple.iam" uid="EnsambleSimple.iam_{DEB10BE0-43AD-93EA-F1D7-68B97F9FEA07}" version="{394CE142-A871-835A-C9DA-F4F05FE88EC1}">
+<AssemblyFile name="EnsambleSimple.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Base:1" grounded="true" uid="Base:1" entityUid="Base.ipt_{445A8BAF-4282-1943-09AB-4BAD19725B0C}">
+<Transform>
+<Rotation>1.0000000000000013 0 -2.227609888176229e-16 0 0.99999999999999911 0 2.220446049250316e-16 0 1.0000000000000002</Rotation>
+<Translation>0 7.1054273576010019e-15 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon1:1" uid="Eslabon1:1" entityUid="Eslabon1.ipt_{D52651A6-4E1B-B8DD-745C-779A52B93902}">
+<Transform>
+<Rotation>0.99999999999999933 0 3.4319484545358669e-15 -3.0531133177191583e-16 0.99999999999999867 -4.9625343202401701e-15 -3.3931191190106311e-15 5.107025913275713e-15 0.99999999999999867</Rotation>
+<Translation>-3.765876499528531e-13 1.9451107391432743e-13 5.2580162446247414e-13</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon2:1" uid="Eslabon2:1" entityUid="Eslabon2.ipt_{15D1FB97-475C-6AD9-965E-BAA7C2C72C19}">
+<Transform>
+<Rotation>0.99999999999999922 0 -9.4800740995866198e-16 3.6082248300317637e-16 1.0000000000000009 5.5929641987305896e-16 1.0234868508263162e-15 -6.9388939039072323e-16 1</Rotation>
+<Translation>4.5943693294248078e-11 1.0587086762825493e-12 -6.0738081231193064e-11</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon3:1" uid="Eslabon3:1" entityUid="Eslabon3.ipt_{A9F79E2F-4AD8-1AA1-4DD3-77B6F2DFACCE}">
+<Transform>
+<Rotation>0.99999999999999978 -1.1238092908923022e-15 -3.3581183396476889e-11 7.2166698884995489e-16 0.99999999998320854 5.7950341968172e-06 3.3579204775349754e-11 -5.7950341968545922e-06 0.99999999998320699</Rotation>
+<Translation>9.6904706481382163e-10 -0.00015936339905309183 -7.4755035246454327e-05</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Mate:1">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>Base:1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Position>7.1176000000006923 -7.1000000000000103 41.999999999999666</Position>
+<Axis>1.6890497383656137e-16 -1.0000000000000013 1.176961807997474e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Base:1</Uid>
+</InstancePath>
+<Position>7.1176000000004445 -7.1000000000000183 41.999999999999993</Position>
+<Axis>4.4517862188283528e-16 -1.0000000000000009 -2.7250928786253207e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Position>5.2175999999864855 -12.900000000001279 41.999988989479647</Position>
+<Axis>-0.99999999998320988 -1.0162532377945316e-15 -5.7950252979685603e-06</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Position>5.2176000000325953 -12.90000000000023 41.999988989418597</Position>
+<Axis>-0.99999999998320943 -4.4369355846832949e-16 -5.7950428683726255e-06</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabon3:1</Uid>
+</InstancePath>
+<Position>-0.53231597205011161 -12.899915972007102 27.499955668567949</Position>
+<Axis>-0.99999999998320921 -1.4509760883708844e-16 -5.7950251171483595e-06</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Position>-0.53231597205049896 -12.899915972007086 27.4999556685679</Position>
+<Axis>-0.99999999998320988 -4.7798221010837699e-16 -5.7950251175922996e-06</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+<Joints>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base.ipt" uid="Base.ipt_{445A8BAF-4282-1943-09AB-4BAD19725B0C}" version="{F0286AC6-7BDB-121D-FDC7-B3C191779CD6}">
+<PartFile name="Base.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>2.5107135897931303</Mass>
+<CenterOfMass>0.94672615394405069 -0.62623937578613997 19.569002877686028</CenterOfMass>
+<Inertia>1179.129527225173 1994.7117582943174 1632.2592147007924 32.242262078958362 -56.557801703950297 7.138772641589564</Inertia>
+</MassProperties>
+<GeometryFile name="Base_ipt_8470b64e.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon1.ipt" uid="Eslabon1.ipt_{D52651A6-4E1B-B8DD-745C-779A52B93902}" version="{172DE959-E7B2-9B5A-64BE-E81AC4DAE832}">
+<PartFile name="Eslabon1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.33027930078288537</Mass>
+<CenterOfMass>7.452365643373561 -12.408581688256557 41.856374117153138</CenterOfMass>
+<Inertia>4.0053310712247621 2.3706655963939847 2.6756724998350108 0.0024355475783522707 -0.0051557263644644987 0.054252174121218556</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon1_ipt_2a20bb4f.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon2.ipt" uid="Eslabon2.ipt_{15D1FB97-475C-6AD9-965E-BAA7C2C72C19}" version="{4EABE9BD-D64F-BB28-DC57-F9814739AC69}">
+<PartFile name="Eslabon2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.58063304277309224</Mass>
+<CenterOfMass>0.65919266488777761 -12.899807257014876 39.851339956583075</CenterOfMass>
+<Inertia>16.859943685151752 17.566263099700912 6.7151197349214931 -1.8604914715979248e-05 -2.9759568877849905 -2.1001484629778132e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon2_ipt_803fe44.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon3.ipt" uid="Eslabon3.ipt_{A9F79E2F-4AD8-1AA1-4DD3-77B6F2DFACCE}" version="{C5606F6F-2B7E-E05E-DD4C-877B1EFA81BF}">
+<PartFile name="Eslabon3.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.32882316248456928</Mass>
+<CenterOfMass>-1.8211670198351979 -12.899779813806319 15.898810077311241</CenterOfMass>
+<Inertia>15.482529351652222 15.753918303947023 1.8079162174440935 0.00015313197995419614 -0.042278898912778459 5.1163282205379798e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon3_ipt_6a054233.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
